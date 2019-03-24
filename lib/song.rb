@@ -15,7 +15,7 @@ class Song
     song = new(title)
     song.artist = Artist.new(artist)
     song.artist.save
-    song.artist.songs << s.name
+    song.artist.songs << song.name
     song
 
   end
