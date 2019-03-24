@@ -12,7 +12,7 @@ class Song
 
   def self.new_by_filename(file)
     artist, title = file.split(" - ")
-    # binding.pry
+    @artist = Artist.new(artist)
   end
 
 end
