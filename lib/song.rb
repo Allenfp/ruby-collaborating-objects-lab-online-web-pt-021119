@@ -16,7 +16,7 @@ class Song
     song.artist = Artist.new(artist)
     song.artist.save
     song.artist.songs << song.name
-    song
+    # song
 
   end
 
