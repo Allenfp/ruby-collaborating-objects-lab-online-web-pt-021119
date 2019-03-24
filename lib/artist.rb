@@ -24,8 +24,8 @@ class Artist
   end
 
   def self.find_or_create_by_name(artist_name)
-  self.new(artist_name) unless all.map do |artist|
-    artist.name}.include? (name)
+  self.new(artist_name) unless all.map do |x|
+    x.name}.include? (name)
   end
   end
 
