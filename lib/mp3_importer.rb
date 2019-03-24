@@ -8,6 +8,6 @@ class MP3Importer
 
   def files
     directory = Dir.entries(@path+"/")
-    directory.find {|file_path| /.mp3// =~ file_path }
+    directory.find {|file_path| file_path.end_with? ".mp3" }
   end
 end
