@@ -7,7 +7,7 @@ class MP3Importer
   end
 
   def files
-    directory = Dir.entries(@path+"/").include? ".mp3"
-    puts directory
+    directory = Dir.entries(@path+"/")
+    return_files = directory.collect {|file_path| file_path.end_with? ".mp3" }
   end
 end
