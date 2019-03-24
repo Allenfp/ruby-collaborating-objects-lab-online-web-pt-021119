@@ -27,5 +27,7 @@ class Artist
     new(name) unless all.map {|artist| artist.name}.include? (name)
   end
 
-
+  def print_songs
+    @songs.each {|song| puts song}
+  end
 end
