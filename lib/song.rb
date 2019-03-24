@@ -1,6 +1,6 @@
 class Artist
 
-  @@songs
+  @@songs = []
 
   attr_accessor :name
 
