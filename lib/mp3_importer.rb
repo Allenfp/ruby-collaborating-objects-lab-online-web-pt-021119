@@ -7,7 +7,7 @@ class MP3Importer
   end
 
   def files
-    directory = Dir.entries(@path+"/")
+    directory = Dir.entries(@path+"/").include? ".mp3"
     puts directory
   end
 end
